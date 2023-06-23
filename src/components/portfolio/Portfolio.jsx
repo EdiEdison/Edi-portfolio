@@ -3,34 +3,26 @@ import './portfolio.css'
 import blog from '../../assets/blog.jpg'
 import health from '../../assets/health.jpg'
 import todo from '../../assets/todo.jpg'
+import axios from 'axios'
+import React, {useState, useEffect} from 'react'
 
-
-// Array of portfolio objects
-
-const data = [
-
-  {
-    id: 1,
-    image: blog,
-    title: 'Blog Website',
-    github: 'https://github.com/EdiEdison/blog-project'
-  },
-  {
-    id: 2,
-    image: health,
-    title: 'Health Care Management System In Django',
-    github: 'https://github.com/EdiEdison/HealthCareMaanagement'
-  },
-  {
-    id: 3,
-    image: todo,
-    title: 'Todo List with Django and JavaScript',
-    github: 'https://github.com/EdiEdison/Todo-List'
-  },
-
-]
 
 const Portfolio = () => {
+  const [portfolioData, setPortfolioData] = useState([]);
+
+  useEffect(() => {
+    const fetchPortfolioData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/');
+        setPortfolioData(response.data);
+      } catch (error) {
+        console.error('Error fetching Portfolio Data:', error)
+      }
+    };
+
+    fetchPortfolioData();
+  }, []);
+
   return (
     <section id='portfolio'>
         <h5>My Recent Work</h5>
@@ -38,7 +30,7 @@ const Portfolio = () => {
 
         <div className="container portfolio__container">
           {
-            data.map(({id, image, title, github}) => {
+            portfolioData.map(({id, image, title, github}) => {
               return (
                 <article key={id} className='portfolio__item'>
                   <div className='portfolio__item-image'>
@@ -54,7 +46,12 @@ const Portfolio = () => {
           }
         </div>
     </section>
-  )
-}
+
+  );
+
+
+};
+
+
 
 export default Portfolio
