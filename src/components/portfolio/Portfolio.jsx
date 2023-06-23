@@ -4,7 +4,7 @@ import blog from '../../assets/blog.jpg'
 import health from '../../assets/health.jpg'
 import todo from '../../assets/todo.jpg'
 import axios from 'axios'
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 
 
 const Portfolio = () => {
@@ -13,7 +13,7 @@ const Portfolio = () => {
   useEffect(() => {
     const fetchPortfolioData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/');
+        const response = await axios.get('http://localhost:5000/portfolio');
         setPortfolioData(response.data);
       } catch (error) {
         console.error('Error fetching Portfolio Data:', error)
@@ -52,6 +52,4 @@ const Portfolio = () => {
 
 };
 
-
-
-export default Portfolio
+export default Portfolio;

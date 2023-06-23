@@ -35,7 +35,7 @@ const Contact = () => {
                         <AiOutlineLinkedin className='contact__option__icon'/>
                         <h4>LinkedIn</h4>
                         <h5>Profile</h5>
-                        <a href='https://www.linkedin.com/in/edi-edison-fornang-94544a252/' target='_blank'>Tape me on LinkedIn</a>
+                        <a href='www.linkedin.com/in/edi-edison-86284024b' target='_blank'>Tape me on LinkedIn</a>
                     </article>
 
 

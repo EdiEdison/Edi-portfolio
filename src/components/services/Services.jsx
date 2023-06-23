@@ -26,11 +26,11 @@ const Services = () => {
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Responsive Designs</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Website Architecture Development</p>
             </li>
           </ul>
         </article>
@@ -44,19 +44,15 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Provide Scalable APIs for your Systems</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>API Consulting</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
-            </li>
-            <li>
-              <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>API implemnentation and support</p>
             </li>
           </ul>
         </article>
@@ -72,23 +68,23 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Step by Step Approach on Learning Python</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Quality Videos and instructor.</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Practical Examples after each video.</p>
             </li>
             <li>
               <BsCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum.</p>
+              <p>Python Mentorship.</p>
             </li>
           </ul>
         </article>
-        {/* END OF WEB DEVELOPMENT */}
+        {/* END OF leactures DEVELOPMENT */}
 
       </div>
     </section>
